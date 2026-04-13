@@ -7,24 +7,77 @@
   <meta name="description" content="自己紹介サイトです。" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- CSSファイルの適用 -->
-  
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <div class="page-wrapper">
     <!-- ヘッダー -->
-
+    <header class="header">
+      <h1>LOGO</h1>
+      <nav>
+        <ul class="nav-items">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#articles">Article</a></li>
+        </ul>
+      </nav>
+    </header>
     <main class="main-content">
       <!-- メインビジュアル -->
-
+      <img class="main-visual" src="./img/main_visual.jpg" alt="黒い羽と黄色い嘴と目の下の皮膚が特徴的なインドハッカという鳥の画像">
       <!-- プロフィール セクション -->
-
+      <section class="section" id="profile">
+        <h2 class="content-title">Profile</h2>
+        <div class="profile">
+          <div>
+            <img class="icon" src="./img/profile.png" alt="プロフィール画像">
+          </div>
+          <div class="profile-contents">
+            <div>
+              <h3>Kochapi</h3>
+            </div>
+            <div>
+              <p>
+              出身：静岡県<br>
+              趣味：模索中<br>
+              技術：勉強中<br>
+              主な仕事：一般事務<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- 記事 セクション -->
-
+      <section class="section" id="articles">
+        <h2 class="content-title">Articles</h2>
+        <div class="articles">
+          <article class="article-contents">
+            <img class="article-img" src="./img/article.jpg" alt="白いチューリップとコーヒーと英字雑誌の画像">
+            <h3>記事のタイトル</h3>
+            <p>こんな記事を書きました</p>
+          </article>
+          <article class="article-contents">
+            <img class="article-img" src="./img/article.jpg" alt="白いチューリップとコーヒーと英字雑誌の画像">
+            <h3>記事のタイトル</h3>
+            <p>こんな記事を書きました</p>
+          </article>
+          <article class="article-contents">
+            <img class="article-img" src="./img/article.jpg" alt="白いチューリップとコーヒーと英字雑誌の画像">
+            <h3>記事のタイトル</h3>
+            <p>こんな記事を書きました</p>
+          </article>
+          <article class="article-contents">
+            <img class="article-img" src="./img/article.jpg" alt="白いチューリップとコーヒーと英字雑誌の画像">
+            <h3>記事のタイトル</h3>
+            <p>こんな記事を書きました</p>
+          </article>
+        </div>
+      </section>
     </main>
-
     <!-- フッター -->
-
+    <footer>
+      <p>&copy; 2026 Profile</p>  
+    </footer>
   </div>
 </body>
 
