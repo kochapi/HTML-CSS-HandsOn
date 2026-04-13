@@ -41,28 +41,96 @@ a {
 /*-------------------------------------------
   ヘッダー
   -------------------------------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+}
 
+.nav-items {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-items a:hover {
+  opacity: 0.7;
+}
 
 /*-------------------------------------------
   メインビジュアル
   -------------------------------------------*/
-
+.main-visual {
+  width: 100%;
+  height: 640px;
+  object-fit: cover;
+  border-radius: 16px;
+}
 
 /*-------------------------------------------
   セクション 共通部分
   -------------------------------------------*/
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
 
+.content-title {
+  border-bottom: 1px solid black;
+}
 
 /* -------------------------------------------
   プロフィール
   -------------------------------------------*/
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
 
+.profile-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.icon {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 /* -------------------------------------------
   記事
   -------------------------------------------*/
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 16px;
+}
 
+.article-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.article-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
 
 /*-------------------------------------------
   フッター
   -------------------------------------------*/
+  footer {
+    padding: 40px 0px;
+    font-size: small;
+    text-align: center;
+  }
